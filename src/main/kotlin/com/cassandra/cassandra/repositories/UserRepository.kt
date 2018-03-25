@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface UserRepository:   CassandraRepository<User,String> {
+    fun findByfirstName(firstName: String): MutableList<User>
 
 }
         /*
