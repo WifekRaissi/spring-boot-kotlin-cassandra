@@ -11,16 +11,3 @@ interface UserRepository:   CassandraRepository<User,String> {
     fun findByfirstName(firstName: String): MutableList<User>
 
 }
-        /*
-
-
-
-        CrudRepository{
-
-    @Query(value="SELECT * FROM customer WHERE firstname=?0")
-fun  findByFirstname(firstname:String):List<Customer>
-    @Query("SELECT * FROM customer WHERE age > ?0")
-    fun  findCustomerHasAgeGreaterthan(age:Int):List<Customer>
-
-
-}*/

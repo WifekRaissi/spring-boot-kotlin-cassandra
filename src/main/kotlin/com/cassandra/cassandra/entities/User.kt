@@ -14,13 +14,4 @@ data class User(
         val lastName:String="",
         val birthDay:Date
 
-)/*
-{
-   data class Id(val id: UUID) {
-      companion object {
-         fun parse(input: String): Id = Customer.Id(UUID.fromString(input))
-      }
-
-      override fun toString(): String = id.toString()
-   }
-}*/
+)
